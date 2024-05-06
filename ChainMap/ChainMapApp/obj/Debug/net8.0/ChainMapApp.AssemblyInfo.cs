@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChainMapApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f045f77c3683d6920a75919628fb480bea98856")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1854b9b8182f92d033db4192e96a16f65571400")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChainMapApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChainMapApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

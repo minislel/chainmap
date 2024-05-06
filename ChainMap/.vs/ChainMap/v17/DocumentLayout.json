@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\",
+  "WorkspaceRootPath": "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F58D7DE-F560-4F13-B6AF-990AEADAF812}|ChainMapApp\\ChainMapApp.csproj|c:\\users\\skutecznieuse\\desktop\\studia\\chainmap\\chainmap\\chainmapapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F58D7DE-F560-4F13-B6AF-990AEADAF812}|ChainMapApp\\ChainMapApp.csproj|solutionrelative:chainmapapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBD5216C-2FCF-4D9C-9D94-D8E617F916B4}|ChainMapLib\\ChainMapLib.csproj|c:\\users\\skutecznieuse\\desktop\\studia\\chainmap\\chainmap\\chainmaplib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBD5216C-2FCF-4D9C-9D94-D8E617F916B4}|ChainMapLib\\ChainMapLib.csproj|c:\\users\\marci\\desktop\\projekty studia\\chainmap\\chainmap\\chainmaplib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBD5216C-2FCF-4D9C-9D94-D8E617F916B4}|ChainMapLib\\ChainMapLib.csproj|solutionrelative:chainmaplib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C99E9A9D-599B-4035-B31B-ABB50D2CB261}|ChainMapTests\\ChainMapTests.csproj|c:\\users\\skutecznieuse\\desktop\\studia\\chainmap\\chainmap\\chainmaptests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7F58D7DE-F560-4F13-B6AF-990AEADAF812}|ChainMapApp\\ChainMapApp.csproj|c:\\users\\marci\\desktop\\projekty studia\\chainmap\\chainmap\\chainmapapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F58D7DE-F560-4F13-B6AF-990AEADAF812}|ChainMapApp\\ChainMapApp.csproj|solutionrelative:chainmapapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99E9A9D-599B-4035-B31B-ABB50D2CB261}|ChainMapTests\\ChainMapTests.csproj|c:\\users\\marci\\desktop\\projekty studia\\chainmap\\chainmap\\chainmaptests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C99E9A9D-599B-4035-B31B-ABB50D2CB261}|ChainMapTests\\ChainMapTests.csproj|solutionrelative:chainmaptests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,28 +22,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapTests\\UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapTests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "ChainMapTests\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapTests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapTests\\UnitTest1.cs",
               "RelativeToolTip": "ChainMapTests\\UnitTest1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T10:48:23.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T10:48:23.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapApp\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapApp\\Program.cs",
               "RelativeDocumentMoniker": "ChainMapApp\\Program.cs",
-              "ToolTip": "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapApp\\Program.cs",
+              "ToolTip": "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapApp\\Program.cs",
               "RelativeToolTip": "ChainMapApp\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -52,13 +55,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapLib\\Class1.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapLib\\Class1.cs",
               "RelativeDocumentMoniker": "ChainMapLib\\Class1.cs",
-              "ToolTip": "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapLib\\Class1.cs",
+              "ToolTip": "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapLib\\Class1.cs",
               "RelativeToolTip": "ChainMapLib\\Class1.cs",
-              "ViewState": "AQIAAAcBAAAAAAAAAAAmwBQBAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T10:47:23.951Z",
               "EditorCaption": ""

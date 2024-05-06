@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapTests\\ChainMapTests.csproj": {}
+    "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapTests\\ChainMapTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapTests\\ChainMapTests.csproj": {
+    "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapTests\\ChainMapTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapTests\\ChainMapTests.csproj",
+        "projectUniqueName": "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapTests\\ChainMapTests.csproj",
         "projectName": "ChainMapTests",
-        "projectPath": "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapTests\\ChainMapTests.csproj",
-        "packagesPath": "C:\\Users\\SkutecznieUse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SkutecznieUse\\Desktop\\studia\\chainmap\\ChainMap\\ChainMapTests\\obj\\",
+        "projectPath": "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapTests\\ChainMapTests.csproj",
+        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marci\\Desktop\\projekty studia\\chainmap\\ChainMap\\ChainMapTests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\SkutecznieUse\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

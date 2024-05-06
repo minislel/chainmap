@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace ChainMapLib
 {
-    public class ChainMap<TKey, TValue> : IDictionary<TKey, TValue>
+    public struct ChainMap<TKey, TValue> : IDictionary<TKey, TValue>
     {
         private Dictionary<TKey, TValue> mainDictionary = new Dictionary<TKey, TValue>();
         private List<Dictionary<TKey, TValue>> dictionaries = new List<Dictionary<TKey, TValue>>();
