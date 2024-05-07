@@ -25,9 +25,10 @@ namespace ChainMapExample
                 Console.WriteLine("2. Zmiana wartości dla klucza");
                 Console.WriteLine("3. Dodaj nowy słownik z wyborem priorytetu");
                 Console.WriteLine("4. Usuń klucz");
-                Console.WriteLine("5. Pobierz wszystkie klucze z ich źródłami");
-                Console.WriteLine("6. Pobierz wszystkie wartości z ich źródłami");
-                Console.WriteLine("7. Zakończ");
+                Console.WriteLine("5. Pobierz wszystkie klucze");
+                Console.WriteLine("6. Pobierz wszystkie wartości");
+                Console.WriteLine("7. Sprawdź, czy chainmap zawiera klucz/wartość");
+                Console.WriteLine("8. Zakończ");
 
                 Console.Write("Wybierz operację: ");
                 var choice = Console.ReadLine();
@@ -47,12 +48,15 @@ namespace ChainMapExample
                         RemoveKey(chainMap);
                         break;
                     case "5":
-                        GetAllKeysWithSources(chainMap);
+                        GetAllKeys(chainMap);
                         break;
                     case "6":
-                        GetAllValuesWithSources(chainMap);
+                        GetAllValues(chainMap);
                         break;
                     case "7":
+                        CheckIfContains(chainMap);
+                        break;
+                    case "8":
                         return;
                     default:
                         Console.WriteLine("Nieprawidłowy wybór. Spróbuj ponownie.");
@@ -127,42 +131,18 @@ namespace ChainMapExample
         }
 
 
-        static void GetAllKeysWithSources(ChainMap<string, string> chainMap)
+        static void GetAllKeys(ChainMap<string, string> chainMap)
         {
-            Console.WriteLine("\nPobieranie wszystkich kluczy z ich źródłami:");
-            var mainDictionary = chainMap.GetMainDictionary();
-            foreach (var v in mainDictionary)
-            {
-                Console.WriteLine($"Klucz: {v.Key}, Źródło: Słownik Główny");
-            }
-
-            for (int i = 0; i < chainMap.CountDictionaries(); i++)
-            {
-                var dictionary = chainMap.GetDictionary(i);
-                foreach (var key in dictionary.Keys)
-                {
-                    Console.WriteLine($"Klucz: {key}, Źródło: Słownik {i}");
-                }
-            }
+            Console.WriteLine("\nPobieranie wszystkich kluczy:");
+            var Keys = chainMap.Keys;
+            Console.WriteLine(String.Join("\n",Keys)); ;
         }
 
-        static void GetAllValuesWithSources(ChainMap<string, string> chainMap)
+        static void GetAllValues(ChainMap<string, string> chainMap)
         {
             Console.WriteLine("\nPobieranie wszystkich wartości z ich źródłami:");
-
-            var mainDictionary = chainMap.GetMainDictionary();
-            foreach (var v in mainDictionary)
-            {
-                Console.WriteLine($"Klucz: {v.Value}, Źródło: Słownik Główny");
-            }
-            for (int i = 0; i < chainMap.CountDictionaries(); i++)
-            {
-                var dictionary = chainMap.GetDictionary(i);
-                foreach (var kvp in dictionary)
-                {
-                    Console.WriteLine($"Klucz: {kvp.Key}, Wartość: {kvp.Value}, Źródło: Słownik {i}");
-                }
-            }
+            var Values = chainMap.Values;
+            Console.WriteLine(String.Join("\n", Values)); ;
         }
         static Dictionary<string, string> CreateDictionary(string name)
         {
@@ -189,6 +169,23 @@ namespace ChainMapExample
                 }
             }
             return dictionary;
+        }
+        public void CheckIfContains(ChainMap<string,string> chainMap)
+        {
+            Console.WriteLine("Sprawdzamy klucz, czy wartość?");
+            var choice = Console.ReadLine();
+            Console.WriteLine("1. Klucz");
+            Console.WriteLine("2. Wartość");
+            Console.WriteLine("3. I jedno I drugie");
+            switch (choice) 
+            {
+                case "1":
+                    break;
+                case "2":
+                    break;
+                case "3":
+                    break;
+            }
         }
     }
 }

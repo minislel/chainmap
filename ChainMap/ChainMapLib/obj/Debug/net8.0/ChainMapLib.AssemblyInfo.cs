@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChainMapLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1854b9b8182f92d033db4192e96a16f65571400")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c639ad8ed1aafa4dbb807a27814edea95ba17f63")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChainMapLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChainMapLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
