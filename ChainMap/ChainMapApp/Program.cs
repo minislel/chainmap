@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Emit;
 using ChainMapLib;
 
 namespace ChainMapExample
@@ -100,8 +101,9 @@ namespace ChainMapExample
             var newDict = CreateDictionary("Nowy");
 
             Console.Write("Podaj priorytet nowego słownika: ");
-            var priority = int.Parse(Console.ReadLine());
-
+            
+            var priorityS = Console.ReadLine();
+            int.TryParse(priorityS, out var priority);
             chainMap.AddDictionary(newDict, priority);
             Console.WriteLine("Nowy słownik dodany do ChainMap.");
         }
@@ -151,14 +153,24 @@ namespace ChainMapExample
             Console.WriteLine($"\nTworzenie słownika '{name}':");
             while (true)
             {
+                
                 Console.Write("Podaj klucz (lub wpisz 'koniec' aby zakończyć): ");
                 var key = Console.ReadLine();
+                if (key is null || key == "")
+                {
+                    Console.WriteLine("niepoprawna warość");
+                    continue;
+                }
                 if (key.ToLower() == "koniec")
                     break;
 
                 Console.Write("Podaj wartość: ");
                 var value = Console.ReadLine();
-
+                if (value is null || value == "")
+                {
+                    Console.WriteLine("niepoprawna warość");
+                    continue;
+                }
                 try
                 {
                     dictionary.Add(key, value);
@@ -170,20 +182,48 @@ namespace ChainMapExample
             }
             return dictionary;
         }
-        public void CheckIfContains(ChainMap<string,string> chainMap)
+        public static void CheckIfContains(ChainMap<string,string> chainMap)
         {
+            string? key, value;
             Console.WriteLine("Sprawdzamy klucz, czy wartość?");
-            var choice = Console.ReadLine();
             Console.WriteLine("1. Klucz");
             Console.WriteLine("2. Wartość");
             Console.WriteLine("3. I jedno I drugie");
+            var choice = Console.ReadLine();
             switch (choice) 
             {
                 case "1":
+                    Console.WriteLine("Podaj klucz:");
+                    key = Console.ReadLine();
+                    if (key is null || key == "")
+                    {
+                        Console.WriteLine("niepoprawna wartość");
+                        return;
+                    }
+                    if (chainMap.ContainsKey(key)) { Console.WriteLine("Zawiera"); } else { Console.WriteLine("nie zawiera"); } 
                     break;
                 case "2":
+                    Console.WriteLine("Podaj Wartość:");
+                     value = Console.ReadLine();
+                    if ( value is null || value == "")
+                    {
+                        Console.WriteLine("niepoprawna wartość");
+                        return;
+                    }
+                    if (chainMap.ContainsValue(value)) { Console.WriteLine("Zawiera"); } else { Console.WriteLine("nie zawiera"); }
                     break;
                 case "3":
+                    Console.WriteLine("Podaj klucz:");
+                    key = Console.ReadLine();
+                    Console.WriteLine("Podaj wartość:");
+                    value = Console.ReadLine();
+                    if (key is null || value is null || value== "" || key == "")
+                    {
+                        Console.WriteLine("niepoprawna wartość");
+                        return;
+                    }
+                    var kvp = new KeyValuePair<string, string>(key, value);
+                    if (chainMap.Contains(kvp)) { Console.WriteLine("Zawiera"); } else { Console.WriteLine("nie zawiera"); }
                     break;
             }
         }

@@ -118,6 +118,10 @@ namespace ChainMapLib
                 dictionaries.Add(v);
             }
         }
+        public ChainMap()
+        { 
+        
+        }
 
         public bool IsReadOnly => false;
 
@@ -125,7 +129,15 @@ namespace ChainMapLib
         {
             if (mainDictionary.ContainsKey(key))
             { throw new ArgumentException("the specified value already exists in the main (override) dictionary!"); }
-            mainDictionary.Add(key, value);
+            foreach (var k in Keys)
+            {
+                if (k.Equals(key))
+                {
+                    mainDictionary.Add(key, value);
+                    break;
+                }
+            }
+            
         }
 
         public bool TryAdd(TKey key, TValue value)
@@ -209,7 +221,12 @@ namespace ChainMapLib
 
         public bool Remove(KeyValuePair<TKey, TValue> item)
         {
-            throw new NotImplementedException();
+            if (this.Contains(item))
+            {
+                mainDictionary.Remove(item.Key);
+                return true;
+            }
+            else return false;
         }
 
         public bool TryGetValue(TKey key, [MaybeNullWhen(false)] out TValue value)
@@ -259,13 +276,12 @@ namespace ChainMapLib
         public void ClearDictionaries()
         {
             dictionaries.Clear();
-            mainDictionary.Clear();
         }
         public int CountDictionaries() { return dictionaries.Count; }
         public List<Dictionary<TKey, TValue>> GetDictionaries()
         {
             List<Dictionary<TKey, TValue>> result = new List<Dictionary<TKey, TValue>>();
-            result.Add(mainDictionary);
+              
             foreach (var d in dictionaries)
             {
                 result.Add(d);
@@ -274,7 +290,7 @@ namespace ChainMapLib
         }
         public Dictionary<TKey, TValue> GetDictionary(int index)
         {
-return dictionaries[index]; 
+            return dictionaries[index]; 
         }
         public Dictionary<TKey, TValue> GetMainDictionary()
         {

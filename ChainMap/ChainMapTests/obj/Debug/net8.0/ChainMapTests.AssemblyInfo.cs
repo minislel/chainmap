@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChainMapTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c639ad8ed1aafa4dbb807a27814edea95ba17f63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f07d31322c72133c8250d83201ea7cc3b17ef3f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChainMapTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChainMapTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
